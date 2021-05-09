@@ -16,8 +16,9 @@
 		FA1BD52226467B0A0073188A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BD52126467B0A0073188A /* TableViewController.swift */; };
 		FA1BD52C26467D590073188A /* DreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BD52A26467D590073188A /* DreamTableViewCell.swift */; };
 		FA1BD52D26467D590073188A /* DreamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1BD52B26467D590073188A /* DreamTableViewCell.xib */; };
-		FA4D4C2A26479CF500188E61 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4C2826479CF500188E61 /* NotFoundView.swift */; };
-		FA4D4C2B26479CF500188E61 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4D4C2926479CF500188E61 /* NotFoundView.xib */; };
+		FA4D4C342647FF3B00188E61 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4C332647FF3B00188E61 /* HistoryTableViewController.swift */; };
+		FA4D4C382648003500188E61 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4C362648003500188E61 /* HistoryTableViewCell.swift */; };
+		FA4D4C392648003500188E61 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4D4C372648003500188E61 /* HistoryTableViewCell.xib */; };
 		FA7DB0202645430700822EAA /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DB01F2645430700822EAA /* GestureViewController.swift */; };
 		FAD9E2E92642848B005CC3C7 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD9E2D6264281F3005CC3C7 /* Poppins-ExtraLight.ttf */; };
 		FAD9E2EA2642848B005CC3C7 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD9E2D7264281F3005CC3C7 /* Poppins-ThinItalic.ttf */; };
@@ -51,8 +52,9 @@
 		FA1BD52126467B0A0073188A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FA1BD52A26467D590073188A /* DreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTableViewCell.swift; sourceTree = "<group>"; };
 		FA1BD52B26467D590073188A /* DreamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DreamTableViewCell.xib; sourceTree = "<group>"; };
-		FA4D4C2826479CF500188E61 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
-		FA4D4C2926479CF500188E61 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
+		FA4D4C332647FF3B00188E61 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		FA4D4C362648003500188E61 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		FA4D4C372648003500188E61 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		FA7DB01F2645430700822EAA /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		FAD9E2D6264281F3005CC3C7 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		FAD9E2D7264281F3005CC3C7 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -121,10 +123,11 @@
 		FA4D4C2626479CB000188E61 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				FA4D4C3E2648184000188E61 /* DreamRowData */,
 				FA1BD52A26467D590073188A /* DreamTableViewCell.swift */,
 				FA1BD52B26467D590073188A /* DreamTableViewCell.xib */,
-				FA4D4C2826479CF500188E61 /* NotFoundView.swift */,
-				FA4D4C2926479CF500188E61 /* NotFoundView.xib */,
+				FA4D4C362648003500188E61 /* HistoryTableViewCell.swift */,
+				FA4D4C372648003500188E61 /* HistoryTableViewCell.xib */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -134,8 +137,16 @@
 			children = (
 				FA7DB01F2645430700822EAA /* GestureViewController.swift */,
 				FA1BD52126467B0A0073188A /* TableViewController.swift */,
+				FA4D4C332647FF3B00188E61 /* HistoryTableViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA4D4C3E2648184000188E61 /* DreamRowData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DreamRowData;
 			sourceTree = "<group>";
 		};
 		FAD9E2D4264281F3005CC3C7 /* Fonts */ = {
@@ -236,7 +247,6 @@
 				FAD9E2ED2642848B005CC3C7 /* Poppins-Light.ttf in Resources */,
 				FAD9E2EE2642848B005CC3C7 /* Poppins-Medium.ttf in Resources */,
 				FAD9E2EF2642848B005CC3C7 /* Poppins-SemiBoldItalic.ttf in Resources */,
-				FA4D4C2B26479CF500188E61 /* NotFoundView.xib in Resources */,
 				FAD9E2F02642848B005CC3C7 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				FAD9E2F12642848B005CC3C7 /* Poppins-ExtraBold.ttf in Resources */,
 				FAD9E2F22642848B005CC3C7 /* Poppins-BlackItalic.ttf in Resources */,
@@ -250,6 +260,7 @@
 				FAD9E2FA2642848B005CC3C7 /* Poppins-MediumItalic.ttf in Resources */,
 				FA02B99C26424F2900457D2F /* LaunchScreen.storyboard in Resources */,
 				FA02B99926424F2900457D2F /* Assets.xcassets in Resources */,
+				FA4D4C392648003500188E61 /* HistoryTableViewCell.xib in Resources */,
 				FA02B99726424F2800457D2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4D4C382648003500188E61 /* HistoryTableViewCell.swift in Sources */,
+				FA4D4C342647FF3B00188E61 /* HistoryTableViewController.swift in Sources */,
 				FA02B99426424F2800457D2F /* ViewController.swift in Sources */,
 				FA1BD52C26467D590073188A /* DreamTableViewCell.swift in Sources */,
 				FA1BD52226467B0A0073188A /* TableViewController.swift in Sources */,
 				FA02B99026424F2800457D2F /* AppDelegate.swift in Sources */,
-				FA4D4C2A26479CF500188E61 /* NotFoundView.swift in Sources */,
 				FA7DB0202645430700822EAA /* GestureViewController.swift in Sources */,
 				FA02B99226424F2800457D2F /* SceneDelegate.swift in Sources */,
 			);

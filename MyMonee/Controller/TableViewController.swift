@@ -14,7 +14,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     let dreamTitle = ["Membeli Mobil", "Membeli Airpods Baru", "Membeli Sepatu Adidas"]
     let nominal = ["IDR 999.000 / IDR 200.000.000", "IDR 999.000 / IDR 1.500.000", "IDR 999.000 / IDR 500.000"]
-    let progress: [Float] = [0.2, 0.5, 0.8]
+    let progress: [Float] = [0.1, 0.5, 0.8]
     
     
     override func viewDidLoad() {
@@ -25,6 +25,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = UIColor.systemGray5
     }
     
     
@@ -39,9 +41,24 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         dreamCell.money.text = nominal[indexPath.row]
         dreamCell.progress.progress = progress[indexPath.row]
         
+        dreamCell.delegate = self
         
         return dreamCell
     }
     
-    
+}
+
+extension TableViewController: DreamTableViewCellDelegate{
+    func actionButton(with title: String) {
+        
+        let alert = UIAlertController(title: "Menghapus Impian", message: "Apakah anda yakin menghapus \"Membeli Mobil\" ?", preferredStyle: .alert)
+        
+        let deleteButton = UIAlertAction(title: "Hapus", style: .destructive)
+        let cancelButton = UIAlertAction(title: "Batal", style: .cancel)
+        
+        alert.addAction(cancelButton)
+        alert.addAction(deleteButton)
+        
+        present(alert, animated: true, completion: nil)
+    }
 }
