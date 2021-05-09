@@ -14,7 +14,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     let dreamTitle = ["Membeli Mobil", "Membeli Airpods Baru", "Membeli Sepatu Adidas"]
     let nominal = ["IDR 999.000 / IDR 200.000.000", "IDR 999.000 / IDR 1.500.000", "IDR 999.000 / IDR 500.000"]
-    let mantap: [Float] = [0.2, 0.5, 0.8]
+    let progress: [Float] = [0.2, 0.5, 0.8]
     
     
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         dreamCell.dreamTitle.text = dreamTitle[indexPath.row]
         dreamCell.money.text = nominal[indexPath.row]
-        dreamCell.progress.progress = mantap[indexPath.row]
+        dreamCell.progress.progress = progress[indexPath.row]
         
         
         return dreamCell
