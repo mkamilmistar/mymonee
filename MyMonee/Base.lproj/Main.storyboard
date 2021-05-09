@@ -261,40 +261,18 @@
                                             <constraint firstItem="QOp-4A-ply" firstAttribute="leading" secondItem="8bw-zP-enS" secondAttribute="leading" id="rqB-h9-hnT"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yc5-Hb-WDn" userLabel="NotFoundComp">
-                                        <rect key="frame" x="25" y="456" width="374" height="154"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muka" translatesAutoresizingMaskIntoConstraints="NO" id="36d-JY-Ndp">
-                                                <rect key="frame" x="138" y="0.0" width="98" height="98"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="98" id="heO-TU-lH5"/>
-                                                    <constraint firstAttribute="height" constant="98" id="xew-HD-Y9v"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wah! Data tidak ditemukan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inw-Go-N0p">
-                                                <rect key="frame" x="91" y="101" width="192" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="dJL-82-ftx"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
-                                                <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkx-Wc-GRJ" customClass="NotFoundView" customModule="MyMonee" customModuleProvider="target">
+                                        <rect key="frame" x="157" y="501" width="110" height="110"/>
                                         <constraints>
-                                            <constraint firstItem="inw-Go-N0p" firstAttribute="centerX" secondItem="36d-JY-Ndp" secondAttribute="centerX" id="1Lt-yR-7HV"/>
-                                            <constraint firstAttribute="height" constant="154" id="fbx-Oa-298"/>
-                                            <constraint firstItem="36d-JY-Ndp" firstAttribute="centerX" secondItem="Yc5-Hb-WDn" secondAttribute="centerX" id="ovQ-je-nxb"/>
-                                            <constraint firstItem="36d-JY-Ndp" firstAttribute="top" secondItem="Yc5-Hb-WDn" secondAttribute="top" id="slU-fm-DA0"/>
-                                            <constraint firstItem="inw-Go-N0p" firstAttribute="top" secondItem="36d-JY-Ndp" secondAttribute="bottom" constant="3" id="yTG-b8-cb7"/>
+                                            <constraint firstAttribute="height" constant="110" id="Vcj-Hu-zWX"/>
+                                            <constraint firstAttribute="width" constant="110" id="aN0-cl-Gaz"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Yc5-Hb-WDn" firstAttribute="trailing" secondItem="Hmf-AX-RVi" secondAttribute="trailing" id="0Uw-wD-IEl"/>
+                                    <constraint firstItem="Gkx-Wc-GRJ" firstAttribute="centerX" secondItem="Hmf-AX-RVi" secondAttribute="centerX" id="2pX-ym-7iG"/>
                                     <constraint firstItem="Hmf-AX-RVi" firstAttribute="trailing" secondItem="W9F-pX-AST" secondAttribute="trailing" id="Bd7-Ww-sl8"/>
-                                    <constraint firstItem="Yc5-Hb-WDn" firstAttribute="top" secondItem="Hmf-AX-RVi" secondAttribute="bottom" constant="15" id="DfB-Nu-HHW"/>
                                     <constraint firstItem="Hmf-AX-RVi" firstAttribute="leading" secondItem="ec8-fE-t2G" secondAttribute="leading" id="J47-YY-XEs"/>
                                     <constraint firstItem="khx-ad-EdB" firstAttribute="trailing" secondItem="WyE-r1-quq" secondAttribute="trailing" id="Pvi-qD-6sR"/>
                                     <constraint firstItem="YTu-Km-Uab" firstAttribute="top" secondItem="Jcn-rO-b4v" secondAttribute="top" constant="10" id="Q8x-5l-Q8e"/>
@@ -306,7 +284,7 @@
                                     <constraint firstItem="Hmf-AX-RVi" firstAttribute="top" secondItem="RvA-k4-prj" secondAttribute="bottom" constant="20" id="daR-Mj-EmO"/>
                                     <constraint firstItem="RvA-k4-prj" firstAttribute="trailing" secondItem="khx-ad-EdB" secondAttribute="trailing" id="epU-3Z-yvI"/>
                                     <constraint firstItem="YTu-Km-Uab" firstAttribute="leading" secondItem="Jcn-rO-b4v" secondAttribute="leading" constant="25" id="l1P-rE-NVG"/>
-                                    <constraint firstItem="Yc5-Hb-WDn" firstAttribute="leading" secondItem="Air-81-Evh" secondAttribute="leading" id="tae-Bf-hge"/>
+                                    <constraint firstItem="Gkx-Wc-GRJ" firstAttribute="top" secondItem="Hmf-AX-RVi" secondAttribute="bottom" constant="60" id="q5F-lF-b5b"/>
                                     <constraint firstItem="RvA-k4-prj" firstAttribute="leading" secondItem="khx-ad-EdB" secondAttribute="leading" id="yZy-VE-ldr"/>
                                 </constraints>
                             </view>
@@ -654,34 +632,46 @@
             </objects>
             <point key="canvasLocation" x="-136" y="94"/>
         </scene>
-        <!--Impian-->
+        <!--Mimpi-->
         <scene sceneID="4rz-ES-ME6">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUx-jO-GVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="FNY-fO-XBe" customClass="TableViewController" customModule="MyMonee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOA-Qb-boO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ctl-zJ-ok7">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="20" y="161" width="374" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="PUh-7p-39o"/>
+                                </constraints>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAs-gt-oNh" customClass="NotFoundView" customModule="MyMonee" customModuleProvider="target">
+                                <rect key="frame" x="152" y="545" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="IIi-2E-PIe"/>
+                                    <constraint firstAttribute="height" constant="110" id="XhZ-uE-MEM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kle-pH-7cg"/>
-                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.91765320299999997" green="0.91763597730000002" blue="0.91764765979999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ctl-zJ-ok7" firstAttribute="leading" secondItem="Kle-pH-7cg" secondAttribute="leading" id="9SQ-NP-3jJ"/>
-                            <constraint firstItem="Kle-pH-7cg" firstAttribute="trailing" secondItem="ctl-zJ-ok7" secondAttribute="trailing" id="C1X-m4-DH5"/>
-                            <constraint firstItem="Kle-pH-7cg" firstAttribute="bottom" secondItem="ctl-zJ-ok7" secondAttribute="bottom" id="XUv-Nh-Tsa"/>
-                            <constraint firstItem="ctl-zJ-ok7" firstAttribute="top" secondItem="Kle-pH-7cg" secondAttribute="top" id="gWE-bd-v6d"/>
+                            <constraint firstItem="iAs-gt-oNh" firstAttribute="top" secondItem="ctl-zJ-ok7" secondAttribute="bottom" constant="104" id="KX3-Tn-2Dl"/>
+                            <constraint firstItem="ctl-zJ-ok7" firstAttribute="leading" secondItem="Kle-pH-7cg" secondAttribute="leading" constant="20" id="ZH4-bk-wwE"/>
+                            <constraint firstItem="Kle-pH-7cg" firstAttribute="trailing" secondItem="ctl-zJ-ok7" secondAttribute="trailing" constant="20" id="dbR-rb-A3g"/>
+                            <constraint firstItem="ctl-zJ-ok7" firstAttribute="top" secondItem="Kle-pH-7cg" secondAttribute="top" constant="21" id="inK-cM-4SX"/>
+                            <constraint firstItem="iAs-gt-oNh" firstAttribute="centerX" secondItem="ctl-zJ-ok7" secondAttribute="centerX" id="s0j-Hu-6kd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Impian" largeTitleDisplayMode="always" id="CqW-SV-uz0"/>
+                    <navigationItem key="navigationItem" title="Mimpi" largeTitleDisplayMode="always" id="CqW-SV-uz0">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Frame 7" springLoaded="YES" style="plain" id="cO1-Bn-QOM"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ctl-zJ-ok7" id="aHv-Z7-qXY"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WUx-jO-GVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1779.7101449275365" y="752.67857142857144"/>
         </scene>
@@ -697,10 +687,10 @@
                                 <rect key="frame" x="0.0" y="-6" width="414" height="819"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-ML-eg9" userLabel="biru">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                                        <rect key="frame" x="-50" y="0.0" width="514" height="311"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-04-07 at 10.06.58" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-ea-DOG">
-                                                <rect key="frame" x="156.5" y="63" width="101" height="101"/>
+                                                <rect key="frame" x="206.5" y="63" width="101" height="101"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="101" id="b07-3B-Ay9"/>
                                                     <constraint firstAttribute="width" constant="101" id="dFt-hJ-dU9"/>
@@ -712,7 +702,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-6W-sXf">
-                                                <rect key="frame" x="94.5" y="193" width="225" height="61.5"/>
+                                                <rect key="frame" x="144.5" y="193" width="225" height="61.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M. Kamil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bE-vr-cba">
                                                         <rect key="frame" x="73.5" y="0.0" width="78.5" height="25.5"/>
@@ -746,8 +736,8 @@
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="EYQ-ML-eg9" firstAttribute="top" secondItem="qZj-8J-9Rc" secondAttribute="top" id="73o-ei-YdC"/>
-                                    <constraint firstAttribute="trailing" secondItem="EYQ-ML-eg9" secondAttribute="trailing" id="946-lM-O1Q"/>
-                                    <constraint firstItem="EYQ-ML-eg9" firstAttribute="leading" secondItem="qZj-8J-9Rc" secondAttribute="leading" id="bsr-po-WqS"/>
+                                    <constraint firstAttribute="trailing" secondItem="EYQ-ML-eg9" secondAttribute="trailing" constant="-50" id="946-lM-O1Q"/>
+                                    <constraint firstItem="EYQ-ML-eg9" firstAttribute="leading" secondItem="qZj-8J-9Rc" secondAttribute="leading" constant="-50" id="bsr-po-WqS"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -920,6 +910,7 @@
         <!--Impian-->
         <scene sceneID="LUb-Y9-J5N">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIY-DB-zEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ixX-3j-bE6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Impian" image="Vector" id="Ujc-Tu-1ZD"/>
                     <toolbarItems/>
@@ -939,12 +930,12 @@
                         <segue destination="FNY-fO-XBe" kind="relationship" relationship="rootViewController" id="ZjW-jK-HSo"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rIY-DB-zEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="767" y="753"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Frame 7" width="36" height="36"/>
         <image name="Screen Shot 2021-04-07 at 10.06.58" width="1144" height="1140"/>
         <image name="Vector" width="21" height="19"/>
         <image name="Vector-1" width="16" height="16"/>

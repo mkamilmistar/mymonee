@@ -90,7 +90,6 @@
 		FA02B98326424F2800457D2F = {
 			isa = PBXGroup;
 			children = (
-				FAD9E2D4264281F3005CC3C7 /* Fonts */,
 				FA02B98E26424F2800457D2F /* MyMonee */,
 				FA02B98D26424F2800457D2F /* Products */,
 			);
@@ -107,6 +106,8 @@
 		FA02B98E26424F2800457D2F /* MyMonee */ = {
 			isa = PBXGroup;
 			children = (
+				FAD9E2D4264281F3005CC3C7 /* Fonts */,
+				FA4D4C2E2647CA1100188E61 /* Controller */,
 				FA4D4C2626479CB000188E61 /* Component */,
 				FA02B98F26424F2800457D2F /* AppDelegate.swift */,
 				FAD9E2CB26426E6C005CC3C7 /* RoundButton.swift */,
@@ -116,10 +117,6 @@
 				FA02B99826424F2900457D2F /* Assets.xcassets */,
 				FA02B99A26424F2900457D2F /* LaunchScreen.storyboard */,
 				FA02B99D26424F2900457D2F /* Info.plist */,
-				FA7DB01F2645430700822EAA /* GestureViewController.swift */,
-				FA1BD52A26467D590073188A /* DreamTableViewCell.swift */,
-				FA1BD52B26467D590073188A /* DreamTableViewCell.xib */,
-				FA1BD52126467B0A0073188A /* TableViewController.swift */,
 			);
 			path = MyMonee;
 			sourceTree = "<group>";
@@ -127,10 +124,21 @@
 		FA4D4C2626479CB000188E61 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				FA1BD52A26467D590073188A /* DreamTableViewCell.swift */,
+				FA1BD52B26467D590073188A /* DreamTableViewCell.xib */,
 				FA4D4C2826479CF500188E61 /* NotFoundView.swift */,
 				FA4D4C2926479CF500188E61 /* NotFoundView.xib */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		FA4D4C2E2647CA1100188E61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DB01F2645430700822EAA /* GestureViewController.swift */,
+				FA1BD52126467B0A0073188A /* TableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		FAD9E2D4264281F3005CC3C7 /* Fonts */ = {

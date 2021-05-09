@@ -7,23 +7,28 @@
 
 import UIKit
 
-class NotFoundView: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class NotFoundView: UIView {
+    
+    @IBOutlet var contentView: UIView!
+    @IBOutlet var logoNotFound: UIImageView!
+    @IBOutlet var labelNotFound: UILabel!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.commonInit()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    //consturctor dengan interface builder (storyBoard)
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.commonInit()
     }
-    */
+    
+    private func commonInit() {
+        Bundle.main.loadNibNamed("NotFoundView", owner: self, options: nil)
+        addSubview(contentView)
+        contentView.frame = self.bounds
+        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+    }
 
 }

@@ -14,7 +14,6 @@ class GestureViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
 
     @IBAction func handleTapRemove(_ gesture: UITapGestureRecognizer, forEvent event: UIEvent){
         
