@@ -19,7 +19,6 @@
 		FA4D4C2A26479CF500188E61 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D4C2826479CF500188E61 /* NotFoundView.swift */; };
 		FA4D4C2B26479CF500188E61 /* NotFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4D4C2926479CF500188E61 /* NotFoundView.xib */; };
 		FA7DB0202645430700822EAA /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DB01F2645430700822EAA /* GestureViewController.swift */; };
-		FAD9E2CC26426E6C005CC3C7 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9E2CB26426E6C005CC3C7 /* RoundButton.swift */; };
 		FAD9E2E92642848B005CC3C7 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD9E2D6264281F3005CC3C7 /* Poppins-ExtraLight.ttf */; };
 		FAD9E2EA2642848B005CC3C7 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD9E2D7264281F3005CC3C7 /* Poppins-ThinItalic.ttf */; };
 		FAD9E2EB2642848B005CC3C7 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD9E2D8264281F3005CC3C7 /* Poppins-ExtraLightItalic.ttf */; };
@@ -55,7 +54,6 @@
 		FA4D4C2826479CF500188E61 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
 		FA4D4C2926479CF500188E61 /* NotFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotFoundView.xib; sourceTree = "<group>"; };
 		FA7DB01F2645430700822EAA /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
-		FAD9E2CB26426E6C005CC3C7 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FAD9E2D6264281F3005CC3C7 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		FAD9E2D7264281F3005CC3C7 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		FAD9E2D8264281F3005CC3C7 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				FA4D4C2E2647CA1100188E61 /* Controller */,
 				FA4D4C2626479CB000188E61 /* Component */,
 				FA02B98F26424F2800457D2F /* AppDelegate.swift */,
-				FAD9E2CB26426E6C005CC3C7 /* RoundButton.swift */,
 				FA02B99126424F2800457D2F /* SceneDelegate.swift */,
 				FA02B99326424F2800457D2F /* ViewController.swift */,
 				FA02B99526424F2800457D2F /* Main.storyboard */,
@@ -268,7 +265,6 @@
 				FA1BD52C26467D590073188A /* DreamTableViewCell.swift in Sources */,
 				FA1BD52226467B0A0073188A /* TableViewController.swift in Sources */,
 				FA02B99026424F2800457D2F /* AppDelegate.swift in Sources */,
-				FAD9E2CC26426E6C005CC3C7 /* RoundButton.swift in Sources */,
 				FA4D4C2A26479CF500188E61 /* NotFoundView.swift in Sources */,
 				FA7DB0202645430700822EAA /* GestureViewController.swift in Sources */,
 				FA02B99226424F2800457D2F /* SceneDelegate.swift in Sources */,
