@@ -8,9 +8,10 @@
 import Foundation
 import UIKit
 
-class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class DreamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var notFoundView: NotFoundView!
     
     let dreamTitle = ["Membeli Mobil", "Membeli Airpods Baru", "Membeli Sepatu Adidas"]
     let nominal = ["IDR 999.000 / IDR 200.000.000", "IDR 999.000 / IDR 1.500.000", "IDR 999.000 / IDR 500.000"]
@@ -19,6 +20,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        notFoundView.image.image = UIImage(named: "muka")
+        notFoundView.label.text = "Wah! Data tidak ditemukan"
+        
         let nib = UINib(nibName: "DreamTableViewCell", bundle: nil)
         
         tableView.register(nib, forCellReuseIdentifier: "DreamTableViewCell")
@@ -48,7 +53,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
 }
 
-extension TableViewController: DreamTableViewCellDelegate{
+extension DreamViewController: DreamTableViewCellDelegate{
     func actionButton(with title: String) {
         
         let alert = UIAlertController(title: "Menghapus Impian", message: "Apakah anda yakin menghapus \"Membeli Mobil\" ?", preferredStyle: .alert)

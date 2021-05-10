@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotFoundView" customModule="MyMonee" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="ReR-Qp-hEo"/>
+                <outlet property="image" destination="xSX-ea-EEv" id="Duh-c3-PqF"/>
+                <outlet property="label" destination="yBg-dE-gfs" id="HFr-1j-55p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muka" translatesAutoresizingMaskIntoConstraints="NO" id="xSX-ea-EEv">
+                    <rect key="frame" x="73.5" y="13" width="98" height="98"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" id="U73-Qc-ARI"/>
+                        <constraint firstAttribute="width" constant="98" id="qaL-2t-Utj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wah! Data tidak ditemukan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBg-dE-gfs">
+                    <rect key="frame" x="55" y="121" width="135" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rk9-lx-Plw"/>
+                        <constraint firstAttribute="width" constant="135" id="siP-IJ-2la"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                    <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="xSX-ea-EEv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="8Z9-Vs-igx"/>
+                <constraint firstItem="yBg-dE-gfs" firstAttribute="centerX" secondItem="xSX-ea-EEv" secondAttribute="centerX" id="8pf-Wl-M1G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="xSX-ea-EEv" secondAttribute="top" constant="31" id="OBi-fk-cdA"/>
+                <constraint firstItem="yBg-dE-gfs" firstAttribute="top" secondItem="xSX-ea-EEv" secondAttribute="bottom" constant="10" id="wew-Sm-IPX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="54.347826086956523" y="-344.19642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="muka" width="98" height="98"/>
+    </resources>
+</document>

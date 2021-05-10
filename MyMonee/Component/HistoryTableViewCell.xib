@@ -61,6 +61,11 @@
                             <constraint firstAttribute="trailing" secondItem="anL-iK-m70" secondAttribute="trailing" constant="12.5" id="oBa-xS-fiQ"/>
                             <constraint firstAttribute="height" constant="58" id="t9B-9l-TJj"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>

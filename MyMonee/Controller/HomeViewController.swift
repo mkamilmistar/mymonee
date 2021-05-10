@@ -8,9 +8,12 @@
 import Foundation
 import UIKit
 
-class HistoryTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var historyTableView: UITableView!
+    
+    
+    @IBOutlet var notFoundView: NotFoundView!
     
     let historyTitle = ["Bayar Listrik", "Gaji"]
     
@@ -23,6 +26,10 @@ class HistoryTableViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        notFoundView.image.image = UIImage(named: "muka")
+        notFoundView.label.text = "Wah! Data tidak ditemukan"
+        
         let nib = UINib(nibName: "HistoryTableViewCell", bundle: nil)
         
         historyTableView.register(nib, forCellReuseIdentifier: "HistoryTableViewCell")
@@ -60,5 +67,22 @@ class Amount{
     init(total: String, uiColor: UIColor) {
         self.total = total
         self.uiColor = uiColor
+    }
+}
+
+struct History {
+    let historyTitle: String
+    
+    let historyDate: String
+    
+    let historyBalance: Amount
+    
+    let icon: String
+    
+    init(historyTitle: String, historyDate: String, historyBalance: Amount, icon: String) {
+        self.historyTitle = historyTitle
+        self.historyDate = historyDate
+        self.historyBalance = historyBalance
+        self.icon = icon
     }
 }
